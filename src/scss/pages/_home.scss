@@ -1,0 +1,58 @@
+.home-container {
+    @extend .primary-container;
+
+    .home-wrapper {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        
+        .left-container {
+            padding: 4rem 0;
+            .top-bar-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+
+                .search-container {
+                    background-color: #C5C5C5;
+                    @include flex(flex-start, center, row);
+                    gap: 0.5rem;
+                    padding: 0.5rem;
+                    border-radius: 10px;
+
+                    input {
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+
+            .title {
+                @include font-heading(2, 550, black, 2)
+            }
+        }
+
+        .right-container {
+            padding: 4rem 2rem;
+
+            .top-bar-container {
+                @include flex(space-between, center, row);
+
+                .notification-wrapper {
+                    @include flex(flex-start, center, row);
+                    gap: 0.5rem;
+
+                    .notification-number {
+                        @include square(1rem);
+                        background-color: red;
+                        @include flex(center, center, row);
+                        color: white;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
