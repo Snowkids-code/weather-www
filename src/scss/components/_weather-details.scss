@@ -5,6 +5,7 @@
     color: white;
     height: 100%;
     border-radius: 10px;
+    width: 100%;
 
     .title {
         @include font-heading(2, 550, white, 2);

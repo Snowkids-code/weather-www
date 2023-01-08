@@ -5,6 +5,10 @@
         grid-area: main;
         display: grid;
         grid-template-columns: 3fr 2fr;
+
+        @media screen and (max-width: 1200px) {
+            @include flex(flex-start, center, column)
+        }
         
         .left-container {
             padding: 4rem 0;
@@ -35,6 +39,7 @@
             .cities-wrapper {
                 @include flex(flex-start, center, row);
                 gap: 1rem;
+                flex-wrap: wrap;
 
                 .cities-card {
                     @include flex(center, center, column);
@@ -50,6 +55,7 @@
 
         .right-container {
             padding: 4rem 2rem;
+            width: 100%;
 
             .top-bar-container {
                 @include flex(space-between, center, row);
@@ -67,10 +73,6 @@
                         cursor: pointer;
                     }
                 }
-            }
-
-            .summary-container {
-                
             }
         }
     }
