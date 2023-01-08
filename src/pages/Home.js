@@ -37,7 +37,7 @@ function Home() {
         <div className="left-container">
           <div className="top-bar-container">
             <div className="search-container">
-              <img alt="image" src={searchIcon} />
+              <img alt="img" src={searchIcon} />
               <input placeholder="Search..." />
             </div>
             <div className="places-dropdown">
@@ -50,6 +50,9 @@ function Home() {
             </div>
           </div>
           <p className="title">Weather Forecast</p>
+          <div className="cities-wrapper">
+              {}
+          </div>
         </div>
         <div className="right-container">
             <div className="top-bar-container">
@@ -61,7 +64,7 @@ function Home() {
                     <p>Places</p>
                 </div>
                 <div className="account-wrapper">
-                    <img alt="image" src={account}/>
+                    <img alt="img" src={account}/>
                 </div>
             </div>
         </div>

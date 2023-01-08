@@ -31,6 +31,10 @@
             .title {
                 @include font-heading(2, 550, black, 2)
             }
+
+            .cities-wrapper {
+                @include flex(space-between, center, row)
+            }
         }
 
         .right-container {
