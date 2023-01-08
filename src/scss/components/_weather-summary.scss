@@ -1,0 +1,41 @@
+.weather-summary-container {
+    margin-top: 2rem;
+
+    .summary-heading {
+        @include flex(space-between, center, row);
+
+        .nav {
+            cursor: pointer;
+            @include font-body(1, normal, black, 1)
+        }
+
+        .active-nav {
+            @include font-body(1, 550, black, 1);
+            cursor: pointer;
+        }
+    }
+
+    .weather-data-container {
+        margin-top: 2rem;
+
+        .weather-data-wrapper {
+            margin: 1rem 0;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            cursor: pointer;
+
+            .humidity-container {
+                @include flex(flex-start, center, row);
+                gap: 0.5rem;
+
+                img {
+                    border-radius: 10px;
+                }
+
+                p {
+                    @include font-body(0.875, normal, black, 1)
+                }
+            }
+        }
+    }
+}

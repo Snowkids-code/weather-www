@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Select from "react-select";
 import searchIcon from "../assets/icon/search.svg";
-import account from '../assets/icon/account.svg'
+import account from "../assets/icon/account.svg";
+import cities from "../data/cities.json";
+import WeatherSummary from "../components/weather-summary";
+import WeatherDetails from "../components/weather-details";
 
 const options = [
   { value: "all", label: "all" },
@@ -31,6 +34,9 @@ function Home() {
     indicatorSeparator: () => ({ display: "none" }),
   };
 
+  const [data, setData] = useState();
+
+
   return (
     <div className="home-container">
       <div className="home-wrapper">
@@ -51,22 +57,33 @@ function Home() {
           </div>
           <p className="title">Weather Forecast</p>
           <div className="cities-wrapper">
-              {}
+            {cities?.map((city) => (
+              <div className="cities-card" key={city.id}>
+                <img alt="city" src={city.source} />
+                <p>{city.city}</p>
+              </div>
+            ))}
           </div>
+          <WeatherSummary
+            pickDay={(selectedDay) => {
+              setData(selectedDay);
+            }}
+          />
         </div>
         <div className="right-container">
-            <div className="top-bar-container">
-                <div className="notification-wrapper">
-                    <p>Notification</p>
-                    <p className="notification-number">1</p>
-                </div>
-                <div className="places-wrapper">
-                    <p>Places</p>
-                </div>
-                <div className="account-wrapper">
-                    <img alt="img" src={account}/>
-                </div>
+          <div className="top-bar-container">
+            <div className="notification-wrapper">
+              <p>Notification</p>
+              <p className="notification-number">1</p>
             </div>
+            <div className="places-wrapper">
+              <p>Places</p>
+            </div>
+            <div className="account-wrapper">
+              <img alt="img" src={account} />
+            </div>
+          </div>
+          <WeatherDetails data={data}/>
         </div>
       </div>
     </div>

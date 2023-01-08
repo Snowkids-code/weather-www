@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "date": "2023-1-1",
+    "day": "Sunday",
+    "humidity": 50,
+    "highestTemperature": 15,
+    "lowestTemperature": 5,
+    "rainLevel" : 15
+  },
+  {
+    "id": 2,
+    "date": "2023-1-2",
+    "day": "Monday",
+    "humidity": 50,
+    "highestTemperature": 18,
+    "lowestTemperature": 12,
+    "rainLevel" : 15
+  },
+  {
+    "id": 3,
+    "date": "2023-1-3",
+    "day": "Tuesday",
+    "humidity": 50,
+    "highestTemperature": 12,
+    "lowestTemperature": 8,
+    "rainLevel" : 15
+  },
+  {
+    "id": 4,
+    "date": "2023-1-4",
+    "day": "Wednesday",
+    "humidity": 50,
+    "highestTemperature": 14,
+    "lowestTemperature": 10,
+    "rainLevel" : 15
+  },
+  {
+    "id": 5,
+    "date": "2023-1-5",
+    "day": "Thursday",
+    "humidity": 50,
+    "highestTemperature": 19,
+    "lowestTemperature": 13,
+    "rainLevel" : 15
+  },
+  {
+    "id": 6,
+    "date": "2023-1-6",
+    "day": "Friday",
+    "humidity": 50,
+    "highestTemperature": 18,
+    "lowestTemperature": 12,
+    "rainLevel" : 15
+  },
+  {
+    "id": 7,
+    "date": "2023-1-7",
+    "day": "Sartuday",
+    "humidity": 50,
+    "highestTemperature": 12,
+    "lowestTemperature": 10,
+    "rainLevel" : 15
+  }
+]

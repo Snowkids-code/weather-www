@@ -1,0 +1,23 @@
+.weather-details-container {
+    @include flex(center, center, column);
+    margin-top: 4rem;
+    background-color:darkblue;
+    color: white;
+    height: 100%;
+    border-radius: 10px;
+
+    .title {
+        @include font-heading(2, 550, white, 2);
+        margin: 0;
+    }
+
+    .date {
+        @include font-body(1, normal, white, 2);
+        margin: 0;
+    }
+
+    .temperature {
+        @include font-body(5, normal, white, 2);
+        margin: 0;
+    }
+}

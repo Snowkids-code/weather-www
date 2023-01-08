@@ -33,7 +33,18 @@
             }
 
             .cities-wrapper {
-                @include flex(space-between, center, row)
+                @include flex(flex-start, center, row);
+                gap: 1rem;
+
+                .cities-card {
+                    @include flex(center, center, column);
+                    cursor: pointer;
+
+                    img {
+                        @include dimensions(13rem, 10rem);
+                        border-radius: 5px;
+                    }
+                }
             }
         }
 
@@ -56,6 +67,10 @@
                         cursor: pointer;
                     }
                 }
+            }
+
+            .summary-container {
+                
             }
         }
     }
