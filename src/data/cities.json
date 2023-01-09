@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
-    "city": "Paris",
+    "city": "Paris, France",
     "source": "https://theplanetd.com/images/Best-Things-to-do-in-Tokyo-Japan-1.jpg"
   },
   {
     "id": 2,
-    "city": "Tokyo",
+    "city": "Tokyo, Japan",
     "source": "https://icapcarbonaction.com/system/files/styles/adelphi_icap_header_hero_xs_1x/private/image/tokyo_takashi-miyazaki-64ajtpezlyc-unsplash.jpg?h=b982b6fb&itok=3_uzIGb7"
   },
   {
     "id": 3,
-    "city": "New York",
+    "city": "New York, USA",
     "source": "https://media.architecturaldigest.com/photos/5da74823d599ec0008227ea8/16:9/w_2560%2Cc_limit/GettyImages-946087016.jpg"
   }
 ]

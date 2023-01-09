@@ -35,6 +35,7 @@ function Home() {
   };
 
   const [data, setData] = useState();
+  const [city, setCity] = useState();
 
 
   return (
@@ -58,7 +59,7 @@ function Home() {
           <p className="title">Weather Forecast</p>
           <div className="cities-wrapper">
             {cities?.map((city) => (
-              <div className="cities-card" key={city.id}>
+              <div className="cities-card" key={city.id} onClick={() => setCity(city.city)}>
                 <img alt="city" src={city.source} />
                 <p>{city.city}</p>
               </div>
@@ -83,7 +84,7 @@ function Home() {
               <img alt="img" src={account} />
             </div>
           </div>
-          <WeatherDetails data={data}/>
+          <WeatherDetails data={data} city={city}/>
         </div>
       </div>
     </div>
